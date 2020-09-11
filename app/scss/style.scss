@@ -1,0 +1,351 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
+
+.header {
+  &__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 122px;
+    font-family: "SFProDisplay-Bold", sans-serif;
+    font-weight: 700;
+  }
+
+  &__box {
+    display: flex;
+  }
+
+  &__adress {
+    margin-right: 60px;
+    width: 265px;
+    padding-left: 30px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../images/adress.svg");
+      width: 30px;
+      height: 30px;
+      left: 0;
+      top: -10px;
+    }
+  }
+
+  &__bottom {
+    margin-bottom: 80px;
+  }
+}
+
+.menu {
+  &__item {
+    display: inline-block;
+
+    & + .menu__item {
+      padding-left: 50px;
+    }
+  }
+}
+
+.user-list {
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+
+  &__item {
+    display: inline-block;
+    padding-right: 10px;
+  }
+}
+
+.basket {
+  position: relative;
+
+  &__num {
+    position: absolute;
+    font-family: "SFProDisplay-Medium", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 10px;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: #1c62cd;
+    border-radius: 50%;
+    text-align: center;
+    bottom: -2px;
+    right: -14px;
+  }
+}
+
+.menu-categories {
+  background-color: #f0f0f4;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 53px;
+
+  &__item {
+    position: relative;
+  }
+
+  &__link {
+    transition: all 0.3s;
+    font-weight: 400;
+    padding: 15px 0 14px;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 0;
+      left: auto;
+      right: 0;
+      position: absolute;
+      background-color: #1c62cd;
+      height: 3px;
+      bottom: -2px;
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      // font-family: 'SFProDisplay-Semibold', sans-serif;
+      // font-weight: 600;
+      color: #000000;
+    }
+
+    &:hover::before {
+      width: 100%;
+      right: auto;
+      left: 0;
+    }
+  }
+}
+
+.banner-section {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__slider {
+    max-width: 870px;
+  }
+
+  &__slider-img {
+    object-fit: cover;
+    min-height: 400px;
+  }
+
+  &__slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+    cursor: pointer;
+  }
+
+  &__slider-btnprev {
+    left: 20px;
+  }
+
+  &__slider-btnnext {
+    right: 20px;
+  }
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  right: 0;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    padding: 0 5px;
+  }
+
+  button {
+    padding: 0;
+    font-size: 0;
+    margin: 0;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    background-color: transparent;
+  }
+}
+
+.slick-active button {
+  background-color: #ffffff;
+}
+
+.sale-item {
+  max-width: 265px;
+  text-align: center;
+  border: 1px solid #CDCDCD;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__info {
+    color: #ffffff;
+    background-color: #1C62CD;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+  }
+
+  &__price {
+    text-align: right;
+    font-family: 'Barlow', sans-serif;
+    position: relative;
+  }
+
+  &__price-new {
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 32px;
+    color: #1C62CD;
+    margin-right: 6px;
+    padding-right: 20px;
+
+    &::after {
+      content: "";
+      background-image: url('../images/ruble-icon.svg');
+      position: absolute;
+      right: 5px;
+      width: 15px;
+      top: 8px;
+      height: 18px;
+
+    }
+  }
+
+  &__price-old {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #C4C4C4;
+    margin-right: 15px;
+    background-image: url('../images/old-line.svg');
+    background-repeat: no-repeat;
+    padding: 2px 5px;
+    display: inline-block;
+
+    &::after {
+      content: "";
+      background-image: url('../images/ruble-icon-old.svg');
+      position: absolute;
+      right: 8px;
+      width: 8px;
+      top: 42px;
+      height: 10px;
+    }
+  }
+
+  &__img {
+    object-fit: contain;
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 21px;
+    font-family: 'SFProDisplay-Bold', sans-serif;
+    font-weight: 700;
+    margin-bottom: 7px;
+  }
+
+  &__footer {
+    background-color: #F0F0F4;
+    padding: 25px 20px;
+    font-size: 18px;
+    line-height: 21px;
+
+    span {
+      color: #1C62CD;
+      display: block;
+      font-family: 'Barlow', sans-serif;
+      font-weight: 700;
+    }
+  }
+}
+
+.search {
+
+  &__tabs {
+    margin-bottom: 25px;
+  }
+
+  &__tabs-item {
+    padding: 11px 26px 12px;
+  }
+
+  &__tabs-item--active {
+    border-radius: 5px;
+    background-color: #f0f0f4;
+    font-weight: 700;
+    font-family: 'SFProDisplay-Bold', sans-serif;
+  }
+
+  &__content-item {
+    display: none;
+  }
+
+  &__content-item--active {
+    display: block;
+  }
+
+  &__content-form {
+    display: flex;
+  }
+
+  &__content-input {
+    width: 100%;
+    background: #F0F0F4;
+    border-radius: 3px;
+    padding: 5px 20px;
+    border: none;
+    font-size: 16px;
+    line-height: 19px;
+
+    &::placeholder {
+      color: #656464;
+    }
+  }
+
+  &__content-btn {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-family: 'SFProDisplay-Bold', sans-serif;
+    background: #1C62CD;
+    border-radius: 3px;
+    padding: 17px 41px;
+    border: none;
+    margin-left: -3px;
+
+
+  }
+}
+
+@import "media";
