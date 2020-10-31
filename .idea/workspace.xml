@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0011bb53-f44e-4389-aca9-87cc3dd94eeb" name="Default Changelist" comment="Create section Categories">
+      <change afterPath="$PROJECT_DIR$/app/images/categories-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/categories-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/categories-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/categories-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/categories-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/categories-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/images/link-arrow.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,8 +46,20 @@
       <option name="presentableId" value="Default" />
       <updated>1599831960320</updated>
       <workItem from="1599831961445" duration="370000" />
-      <workItem from="1599835119073" duration="3720000" />
+      <workItem from="1599835119073" duration="4400000" />
+      <workItem from="1600249813484" duration="30000" />
+      <workItem from="1600249875905" duration="977000" />
+      <workItem from="1600440866932" duration="79000" />
+      <workItem from="1604151032420" duration="12207000" />
     </task>
+    <task id="LOCAL-00001" summary="Create section Categories">
+      <created>1599838848986</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599838848986</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -50,6 +70,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Create section Categories" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="878" y="339" key="FileChooserDialogImpl" timestamp="1600440885107">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state x="878" y="339" key="FileChooserDialogImpl/0.0.2194.1194@0.0.2194.1194" timestamp="1600440885107" />
     <state x="695" y="477" width="726" height="294" key="Github.ShareDialog" timestamp="1599835453945">
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
@@ -58,5 +82,9 @@
       <screen x="0" y="0" width="2194" height="1194" />
     </state>
     <state x="933" y="293" key="Github.UntrackedFilesDialog/0.0.2194.1194@0.0.2194.1194" timestamp="1599835520296" />
+    <state x="141" y="330" key="Vcs.Push.Dialog.v2" timestamp="1599838852463">
+      <screen x="0" y="0" width="2194" height="1194" />
+    </state>
+    <state x="141" y="330" key="Vcs.Push.Dialog.v2/0.0.2194.1194@0.0.2194.1194" timestamp="1599838852463" />
   </component>
 </project>
